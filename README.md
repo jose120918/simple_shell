@@ -1,10 +1,12 @@
 <div align="center">
 
 # Simple Shell
-The simple shell is a command language interpreter that takes commands from the STDIN and executes them. Its code is written in C language.
+The simple shell is a command language interpreter that takes commands from the STDIN and executes them. 
+Its code is written in C language.
 
 
 ---
+
 ## RESOURCES :books:
 </div>
 
