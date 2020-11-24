@@ -1,8 +1,4 @@
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <sys/wait.h>
+#include "holberton.h"
 
 #define PRMTSIZ 255
 #define MAXARGS 63
@@ -26,7 +22,7 @@ int main(void)
 			continue;
 
 		// convert input line to list of arguments
-		for (int i = 0; i < sizeof(args) && *ptr; ptr++)
+		for (unsigned int i = 0; i < sizeof(args) && *ptr; ptr++)
 		{
 			if (*ptr == ' ')
 				continue;
