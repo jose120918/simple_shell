@@ -16,7 +16,7 @@ int main(void)
 		char *ptr = input;
 		char *args[MAXARGS + 1] = {NULL};
 		int wstatus;
-		char istty;
+		int istty;
 
 		istty = isatty(STDIN_FILENO);
 		if (istty == 1)
