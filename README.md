@@ -34,12 +34,12 @@ $ git clone https://github.com/lperezcas16/simple_shell.git
 Compile with
 
 ```
-$ gcc -Wall -Werror -Wextra -pedantic *.c -o simple_shell
+$ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 ```
 
 Execute it:
 ```
-$ ./simple_shell
+$ ./hsh
 ```
 
 ---
@@ -66,13 +66,13 @@ $ echo Hello World!
 ### NON-INTERACTIVE MODE:
 
 ```
-$ echo <commands and arguments> | ./simple_shell
+$ echo <commands and arguments> | ./hsh
 ```
 EXAMPLE:
 
 * INPUT:
 ```
-$ echo "ls -l" | ./simple_shell
+$ echo "ls -l" | ./hsh
 ```
 
 * OUTPUT
