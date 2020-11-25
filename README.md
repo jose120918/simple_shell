@@ -7,8 +7,8 @@ Its code is written in C language.
 
 ---
 
-## RESOURCES :books:
-</div>
+## RESOURCES
+
 
 * [Everything you need to know to start coding your own shell](https://intranet.hbtn.io/concepts/64)
 
@@ -44,9 +44,8 @@ $ ./simple_shell
 
 ---
 
-## USAGE: :warning:
+## USAGE:
 
-</div>
 
 ### INTERACTIVE MODE:
 
@@ -101,7 +100,7 @@ total 140
 
 ## USAGE:
 
-</div>
+
 
 * SETENV:
 ```
@@ -121,5 +120,4 @@ $ env
 ---
 
 ### AUTHORS
-* **Joel Silva** - [DovaZk](https://github.com/DovaZk) :sunglasses:
 * **Jose Muñoz** - [jose120918](https://github.com/jose120918) :sunglasses:
