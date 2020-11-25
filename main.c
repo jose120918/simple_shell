@@ -6,7 +6,7 @@
 
 /**
  * main - Shell, función
- * Return: 0 Success, Other Failed.
+ * Return: 0 Success, o pailas.
  */
 int main(void)
 {
@@ -43,7 +43,5 @@ int main(void)
 		signal(SIGINT, SIG_IGN);
 
 		wait(&wstatus);
-		if (WIFEXITED(wstatus))
-			printf("<%d>", WEXITSTATUS(wstatus));
 	}
 }
