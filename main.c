@@ -17,6 +17,7 @@ int main(void)
 		char *args[MAXARGS + 1] = {NULL};
 		int wstatus;
 		int istty;
+		unsigned int i = 0
 
 		istty = isatty(STDIN_FILENO);
 		if (istty == 1)
@@ -27,7 +28,7 @@ int main(void)
 		if (*ptr == '\n')
 			continue;
 
-		for (unsigned int i = 0; i < sizeof(args) && *ptr; ptr++)
+		for (; i < sizeof(args) && *ptr; ptr++)
 		{
 			if (*ptr == ' ')
 				continue;
