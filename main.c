@@ -16,8 +16,12 @@ int main(void)
 		char *ptr = input;
 		char *args[MAXARGS + 1] = {NULL};
 		int wstatus;
+		char istty;
 
-		printf("%s ", getuid() == 0 ? "#" : "$");
+		istty = isatty(STDIN_FILENO);
+		if (istty == 1)
+			printf("%s ", getuid() == 0 ? "#" : "$");
+		
 		fgets(input, PRMTSIZ, stdin);
 
 		if (*ptr == '\n')
