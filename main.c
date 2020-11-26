@@ -5,8 +5,8 @@
 #define EXITCMD "exit"
 
 /**
- * main - Shell, función
- * Return: 0 Success, o pailas.
+ * main -  All main function to execute the shell.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -16,13 +16,12 @@ int main(void)
 		char *ptr = input;
 		char *args[MAXARGS + 1] = {NULL};
 		int wstatus;
-		int istty;
-		unsigned int i = 0
+		char istty;
+		unsigned int i = 0;
 
 		istty = isatty(STDIN_FILENO);
 		if (istty == 1)
 			printf("%s ", getuid() == 0 ? "#" : "$");
-		
 		fgets(input, PRMTSIZ, stdin);
 
 		if (*ptr == '\n')
@@ -44,7 +43,7 @@ int main(void)
 
 		signal(SIGINT, SIG_DFL);
 		if (fork() == 0)
-			exit(execvp(args[0], args));
+			exit(execve(args[0], args));
 		signal(SIGINT, SIG_IGN);
 
 		wait(&wstatus);
