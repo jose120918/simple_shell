@@ -12,12 +12,12 @@ int main(void)
 {
 	for (;;)
 	{
-		char input[PRMTSIZ + 1] = {0x0};
-		char *ptr = input;
-		char *args[MAXARGS + 1] = {NULL};
 		int wstatus;
-		char istty;
 		unsigned int i = 0;
+		char input[PRMTSIZ + 1] = {0x0};
+		char *args[MAXARGS + 1] = {NULL};
+		char *ptr = input;
+		char istty;
 
 		istty = isatty(STDIN_FILENO);
 		if (istty == 1)
