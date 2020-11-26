@@ -45,15 +45,11 @@ $ ./hsh
 
 $ pwd
 
-/home/vagrant/Proyecto_shell/simple_shell
+/home/jose/simple_shell
 
 $ echo Hello World!
 
 hello world
-
-$ a
-
-./hsh: 2: a: not found
 
 $ exit
 
