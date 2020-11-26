@@ -43,7 +43,7 @@ int main(void)
 
 		signal(SIGINT, SIG_DFL);
 		if (fork() == 0)
-			exit(execve(args[0], args));
+			exit(execvp(args[0], args));
 		signal(SIGINT, SIG_IGN);
 
 		wait(&wstatus);
