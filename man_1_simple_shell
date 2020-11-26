@@ -41,7 +41,7 @@ Sets an environment variable, overwrite if exist, creates it of doesn't exist.
 Unsets a an environment variable, prints error if cant be found
 
 .SH Examples
-$ ./simple_shell
+$ ./hsh
 
 $ pwd
 
@@ -53,7 +53,7 @@ hello world
 
 $ a
 
-./simple_shell: 2: a: not found
+./hsh: 2: a: not found
 
 $ exit
 
