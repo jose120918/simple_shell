@@ -84,45 +84,6 @@ $ ./hsh
 
 ---
 
-## USAGE:
-
-
-### INTERACTIVE MODE:
-
-```
-$ <command> <flags> <argument>
-```
-EXAMPLE:
-
-* INPUT:
-```
-$ echo Hello World!
-```
-* OUTPUT:
-```
- Hello World!
-```
-
-### NON-INTERACTIVE MODE:
-
-```
-$ echo <commands and arguments> | ./hsh
-```
-EXAMPLE:
-
-* INPUT:
-```
-$ echo "ls -l" | ./hsh
-```
-
-* OUTPUT
-```
-total 140
--rw-rw-r-- 1 vagrant vagrant 639 Aug 13 19:14 0_principal_header.h
-(...)
-```
-
----
 
 ## BUILT-IN COMMANDS 
 
@@ -132,30 +93,6 @@ total 140
 | ------- | --- |
 | exit | Exit simple shell|	
 | env | Display environment variables |
-| setenv | Set environment variable value or create a new one |
-| unsetenv | Delete environment variable |
-
-
----
-
-## USAGE:
-
-
-
-* SETENV:
-```
-$ setenv <MYVAR> <myvalue>
-```
-
-* UNSETENV
-```
-$ unsetenv <MYVAR>
-```
-
-* env
-```
-$ env 
-```
 
 ---
 
