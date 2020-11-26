@@ -28,7 +28,7 @@ Its code is written in C language.
 Clone this repo:
 
 ```
-$ git clone https://github.com/lperezcas16/simple_shell.git
+$ git clone https://github.com/jose120918/simple_shell.git
 ```
 
 Compile with
