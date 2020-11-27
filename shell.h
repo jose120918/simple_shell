@@ -9,6 +9,8 @@
 #include <stdlib.h>
 #include <sys/wait.h>
 
+/*-------- Prototipos ----------*/
+
 int _strcmp(char *s1, char *s2);
 
 #endif
