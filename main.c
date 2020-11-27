@@ -5,7 +5,7 @@
 #define EXITCMD "exit"
 
 /**
- * main -  All main function to execute the shell.
+ * main -  Función principal
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -37,8 +37,7 @@ int main(void)
 				;
 			*ptr = '\0';
 		}
-
-		if (strcmp(EXITCMD, args[0]) == 0)
+		if (_strcmp(EXITCMD, args[0]) == 0)
 			return (0);
 
 		signal(SIGINT, SIG_DFL);
@@ -47,5 +46,4 @@ int main(void)
 		signal(SIGINT, SIG_IGN);
 
 		wait(&wstatus);
-	}
 }
