@@ -46,4 +46,5 @@ int main(void)
 		signal(SIGINT, SIG_IGN);
 
 		wait(&wstatus);
+	}
 }
